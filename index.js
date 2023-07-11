@@ -29,7 +29,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "https://nimble-salmiakki-fb7177.netlify.app",
+    origin: "https://lifesuruvofrontend.vercel.app",
   })
 );
 
