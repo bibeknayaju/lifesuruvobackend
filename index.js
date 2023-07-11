@@ -31,7 +31,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "https://effervescent-parfait-74fc1a.netlify.app",
+    origin: "https://lifesuruvofrontend.vercel.app",
   })
 );
 
