@@ -14,6 +14,8 @@ const multer = require("multer");
 const validator = require("validator");
 const fs = require("fs");
 const bodyParser = require("body-parser");
+const path = require("path");
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "uploads/");
