@@ -41,8 +41,10 @@ app.use(
 );
 app.use(bodyParser.json({ limit: "50mb" }));
 
-app.use("/uploads", express.static(__dirname + "/uploads"));
-app.use("/userphotos", express.static(__dirname + "/userphotos"));
+// app.use("/uploads", express.static(__dirname + "/uploads"));
+// app.use("/userphotos", express.static(__dirname + "/userphotos"));
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.use("/userphotos", express.static(path.join(__dirname, "userphotos")));
 
 const bcryptSalt = bcryptjs.genSaltSync(10);
 const jwtSecret = "asdfe45we45w345wegw345werjktjwertkj";
